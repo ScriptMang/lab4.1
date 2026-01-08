@@ -9,4 +9,9 @@ function formatFullname (firstName, lastName) {
     console.log(`${newLastName}, ${newFirstName}`);
 }
 
+function calculateTotalCost(price, quantity, taxRate) {
+
+}
+
+
 formatFullname("john", "stickman");
