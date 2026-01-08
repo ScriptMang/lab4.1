@@ -1,4 +1,7 @@
 function formatFullname (firstName, lastName) {
+    if (firstName === "" || lastName === "") {
+        return "Invalid name input";
+    }
     let a = firstName[0];
     let b = lastName[0];
     let newFirstName = firstName.replace(firstName[0], a.toUpperCase());
