@@ -1,5 +1,5 @@
-function formatFullname (firstaname, lastName) {
-    console.log(`${lastname}, ${firstname}`);
+function formatFullname (firstName, lastName) {
+    console.log(`${lastName}, ${firstName}`);
 }
 
-formatFullname("john", "stickman")
+formatFullname("john", "stickman");
