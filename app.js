@@ -10,9 +10,13 @@ function formatFullname (firstName, lastName) {
 }
 
 function calculateTotalCost(price, quantity, taxRate) {
+    if (typeof price !== "number" || 
+        typeof quantity !== "number" || typeof taxRate !== "number") {
+             return "Invalid input";
+    }
     return totalCost = (price * quantity) * (1 + taxRate);
 }
 
 
 formatFullname("john", "stickman");
-console.log(`Total cost of items: ` + calculateTotalCost(12, 5, 0.07));
+console.log(`Total cost of items: ` + calculateTotalCost("x", 5, 0.07));
