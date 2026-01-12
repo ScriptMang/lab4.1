@@ -17,6 +17,25 @@ function calculateTotalCost(price, quantity, taxRate) {
     return totalCost = (price * quantity) * (1 + taxRate);
 }
 
+function checkEligibility(age, isEmployed) {
+    if (age > 18 && isEmployed === "employed") {
+        return "You are eligible."
+    }
+
+    if (age > 18 && isEmployed === "unemployed"){
+        return "You are conditionally eligible."
+    }
+
+    if (age < 18){
+        return "You are not eligible."
+    }
+}
+
+
+
 
 formatFullname("john", "stickman");
 console.log(`Total cost of items: ` + calculateTotalCost("x", 5, 0.07));
+console.log(`Bobby is 23 and employed: ` + checkEligibility(23, "employed"));
+console.log(`Ren is 28 and unemployed: ` + checkEligibility(28, "unemployed"));
+console.log(`Jimmy is 14 and unemployed: ` + checkEligibility(14, "unemployed"));
