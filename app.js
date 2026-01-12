@@ -12,7 +12,7 @@ function formatFullname (firstName, lastName) {
 function calculateTotalCost(price, quantity, taxRate) {
     if (typeof price !== "number" || 
         typeof quantity !== "number" || typeof taxRate !== "number") {
-             return "Invalid input";
+             return "\"Invalid input\"";
     }
     return totalCost = (price * quantity) * (1 + taxRate);
 }
