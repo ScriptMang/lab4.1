@@ -10,8 +10,9 @@ function formatFullname (firstName, lastName) {
 }
 
 function calculateTotalCost(price, quantity, taxRate) {
-
+    return totalCost = (price * quantity) * (1 + taxRate);
 }
 
 
 formatFullname("john", "stickman");
+console.log(`Total cost of items: ` + calculateTotalCost(12, 5, 0.07));
