@@ -1,3 +1,4 @@
+// Task1
 function formatFullname (firstName, lastName) {
     if (firstName === "" || lastName === "") {
         return "Invalid name input";
@@ -9,6 +10,7 @@ function formatFullname (firstName, lastName) {
     console.log(`${newLastName}, ${newFirstName}`);
 }
 
+// Task2
 function calculateTotalCost(price, quantity, taxRate) {
     if (typeof price !== "number" || 
         typeof quantity !== "number" || typeof taxRate !== "number") {
@@ -17,6 +19,7 @@ function calculateTotalCost(price, quantity, taxRate) {
     return totalCost = (price * quantity) * (1 + taxRate);
 }
 
+// Task3
 function checkEligibility(age, isEmployed) {
     if (age > 18 && isEmployed === "employed") {
         return "You are eligible."
