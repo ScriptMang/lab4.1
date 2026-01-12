@@ -19,7 +19,7 @@ function calculateTotalCost(price, quantity, taxRate) {
     return totalCost = (price * quantity) * (1 + taxRate);
 }
 
-// Task3
+// Task3, Task4
 function checkEligibility(age, isEmployed) {
     if (age > 18 && isEmployed === "employed") {
         return "You are eligible."
