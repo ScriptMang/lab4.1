@@ -10,7 +10,7 @@ function formatFullname (firstName, lastName) {
     console.log(`${newLastName}, ${newFirstName}`);
 }
 
-// Task2
+// Task2, Task4
 function calculateTotalCost(price, quantity, taxRate) {
     if (typeof price !== "number" || 
         typeof quantity !== "number" || typeof taxRate !== "number") {
@@ -19,7 +19,7 @@ function calculateTotalCost(price, quantity, taxRate) {
     return totalCost = (price * quantity) * (1 + taxRate);
 }
 
-// Task3, Task4
+// Task3
 function checkEligibility(age, isEmployed) {
     if (age > 18 && isEmployed === "employed") {
         return "You are eligible."
