@@ -35,7 +35,8 @@ function checkEligibility(age, isEmployed) {
 
 
 formatFullname("john", "stickman");
-console.log(`Total cost of items: ` + calculateTotalCost("x", 5, 0.07));
+console.log(`Total cost of 5 plates at $12 with 7% tax-rate: ` + calculateTotalCost(12, 5, 0.07));
+console.log(`Total cost of 5 plates at $12 with 7% tax-rate: ` + calculateTotalCost("x", 5, 0.07));
 console.log(`Bobby is 23 and employed: ` + checkEligibility(23, "employed"));
 console.log(`Ren is 28 and unemployed: ` + checkEligibility(28, "unemployed"));
 console.log(`Jimmy is 14 and unemployed: ` + checkEligibility(14, "unemployed"));
